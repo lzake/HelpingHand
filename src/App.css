@@ -1,0 +1,375 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width:992px) {
+  .desktop-only {
+    display: block !important;
+  }
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .mobile-only {
+    display: block !important;
+  }
+  .desktop-only {
+    display: none !important;
+  }
+}
+
+.bg-gray {
+  background-color: #DDDDDD
+}
+
+form {
+  padding: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 15px 0 rgba(0, 0, 0, 0.12) !important;
+}
+
+h4 {
+  text-align: center;
+}
+
+.btn {
+  border-radius: 0px;
+}
+
+.form-control {
+  border-radius: 0px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.blue {
+  color: #337ab7;
+}
+
+.fa {
+  color: #337ab7;
+}
+
+.fa-facebook-f {
+  padding: 10px 12px 10px 12px;
+  border: 1px solid #337ab7;
+  border-radius: 50%;
+}
+
+.fa-google-plus {
+  padding: 10px 8px 10px 8px;
+  border: 1px solid #337ab7;
+  border-radius: 50%;
+}
+
+.fa-twitter {
+  padding: 10px 8px 10px 8px;
+  border: 1px solid #337ab7;
+  border-radius: 50%;
+}
+
+i {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.flip {
+  -webkit-perspective: 800;
+  perspective: 800;
+  position: relative;
+}
+
+.flip .card.flipped {
+  -webkit-transform: rotatey(-180deg);
+  transform: rotatey(-180deg);
+}
+
+.flip .card {
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+}
+
+.flip .card .face {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 2;
+}
+
+.flip .card .front {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.flip .card .back {
+  -webkit-transform: rotatey(-180deg);
+  transform: rotatey(-180deg);
+}
+
+.inner {
+  margin: 0px !important;
+}
+
+body {
+  font-family: Roboto;
+  height: 100vh;
+  line-height: inherit;
+}
+
+.click-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.search-text {
+  margin-top: 50px;
+  background-color: #272d33;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.search-text .input-search {
+  height: 45px;
+  width: 40%;
+  padding-left: 20px;
+  color: #333;
+}
+
+.search-text .btn-search {
+  background: #da3e44;
+  font-family: Roboto;
+  border: none;
+  color: #FFF;
+  height: 45px;
+  width: 80px;
+}
+
+.search-text h4 {
+  color: #FFF;
+  font-weight: 700;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 1);
+  padding: 30px 0px;
+}
+
+.logo {
+  color: #FFF;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.adress span,
+.menu span {
+  color: #FFF;
+  font-weight: 800;
+  border-bottom: 1px solid #c7c7c7;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  display: block;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+.adress li a,
+.menu li a {
+  color: #FFF;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.adress li,
+.menu li {
+  margin-top: 5px;
+  list-style: none;
+}
+
+.adress li a:hover,
+.menu li a:hover {
+  color: #da3e44;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.fa {
+  color: #da3e44;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.createorlog {
+  font-family: 'Lobster', cursive;
+  color: rgb(26, 151, 170)!important;
+  font-size: 14pt;
+  text-shadow: -.5px -.5px 0 rgb(252, 252, 252), 1px -.5px 0 rgb(255, 255, 255), -.5px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+}
+
+.frontlog {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 24pt;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+
+.hidden {
+  visibility: hidden;
+}
+
+.canvas {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+}
+
+div.card.flipped {
+  background-color: transparent;
+}
+
+.card-img-top {
+  height: 514px;
+  /* width: 775.25px; */
+}
+
+.modal-content {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: null;
+  background-clip: padding-box;
+  border: 0px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff!important;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.btn-outline-secondary {
+  color: black
+}
+
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navvie {
+  background-color: #e3f2fd;
+  border-bottom: 1px solid black;
+}
+
+.btn-round-lg {
+  border-radius: 22.5px;
+}
+
+.btn-round {
+  border-radius: 17px;
+}
+
+.container {
+  max-width: 720px;
+}
+.smallWidth{
+  max-width: 120px;
+}
+.whiteBG{
+  background-color: rgb(223, 255, 200)!important;
+  color:black
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.bigMap {
+  height: 400px;
+  width: 400px;
+  max-width: 90%;
+  display: inline-block;
+  margin-top: 1rem;
+  border: black 3px solid;
+}
+.hands{
+  max-width: 100px;
+  border: black solid 1px;
+}
+.logofont{
+  font-family: 'Lobster', cursive;
+}
